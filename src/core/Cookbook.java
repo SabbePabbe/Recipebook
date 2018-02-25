@@ -6,16 +6,28 @@ public class Cookbook {
 
     private String id;
     private String userID;
-    private String name;
+    private String cookbookName;
     private List<Recipe> recipes;
 
-    public Cookbook(String id, String userID, String name, List<Recipe> recipes)
+
+
+    public Cookbook(String id, String userID, String cookbookName, List<Recipe> recipes)
     {
         this.id = id;
         this.userID =userID;
-        this.name = name;
+        this.cookbookName = cookbookName;
         this.recipes =recipes;
     }
+
+
+
+    @Override
+    public String toString(){
+        return "Cookbook{" + "id = " + id +
+                ", userID = " + userID +
+                ", Cookbook Name = " + cookbookName + "}";
+    }
+
     
 
 
