@@ -1,34 +1,34 @@
 package core;
 
-import lombok.*;
+//import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@EqualsAndHashCode (of = {"userId", "recipeId"})
-@NoArgsConstructor
+//@EqualsAndHashCode (of = {"userId", "recipeId"})
+//@NoArgsConstructor
 @Entity
 @IdClass(RatingPK.class)
 public class Rating  implements Serializable {
 
     @Id
-    @Getter
-    @Setter
+  //  @Getter
+   // @Setter
     @Column(nullable=false)
     private String userId;
 
     @Id
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     @Column(nullable=false)
     private String recipeId;
 
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     @Column(nullable=false)
     private int value;
 
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     private String comment;
 
 

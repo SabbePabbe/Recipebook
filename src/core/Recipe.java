@@ -1,33 +1,33 @@
 package core;
 
-import lombok.*;
+//import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@NoArgsConstructor
-@EqualsAndHashCode(of = {"id"})
+//@NoArgsConstructor
+//@EqualsAndHashCode(of = {"id"})
 @Entity
 //@Table( name="Recipe")
 public class Recipe implements Serializable {
 
     @Id
-    @Getter
-    @Setter
+  //  @Getter
+    //@Setter
     @Column(nullable=false)
     private String id;
 
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     @Column(nullable=false)
     private String name;
 
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     @Column(nullable=false)
     private String creator;
 
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     @Column(nullable=false)
     private String creationTime;
 

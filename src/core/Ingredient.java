@@ -1,25 +1,25 @@
 package core;
 
 
-import lombok.*;
+//import lombok.*;
 import javax.persistence.*;
 
-@NoArgsConstructor
-@EqualsAndHashCode(of = {"id", "name"})
+//@NoArgsConstructor
+//@EqualsAndHashCode(of = {"id", "name"})
 @Entity
 @IdClass(IngredientPK.class)
 //@Table( name="ingredient")
 public class Ingredient {
 
     @Id
-    @Getter
-    @Setter
+  //  @Getter
+   // @Setter
     @Column(nullable=false)
     private String id;
 
     @Id
-    @Getter
-    @Setter
+    //@Getter
+    //@Setter
     @Column(nullable=false)
     private String name;
 

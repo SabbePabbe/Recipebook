@@ -1,17 +1,14 @@
 package core;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-
 import java.io.Serializable;
 
-@EqualsAndHashCode
+//@EqualsAndHashCode
 public class RatingPK implements Serializable {
 
-    @Getter
+  //  @Getter
     private String userId;
 
-    @Getter
+    //@Getter
     private String recipeId;
 
 
