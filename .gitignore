@@ -81,17 +81,39 @@ fabric.properties
 
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
-
-.idea/artifacts/Recipebook_war_exploded.xml
-.idea/vcs.xml
-
-*.iml
-modules.xml
-.idea/misc.xml
-*.ipr
+#*.iml
+#modules.xml
+#.idea/misc.xml
+#*.ipr
 
 # Sonarlint plugin
 .idea/sonarlint
 
 
 # End of https://www.gitignore.io/api/intellij
+
+
+#Our own attempts to exclude stuff
+
+.idea/out/artifacts/Recipebook_war_exploded.xml
+.idea/vcs.xml
+
+Recipebook.iml
+
+lib/javax.annotation.jar
+lib/javax.ejb.jar
+lib/javax.jms.jar
+lib/javax.resource.jar
+lib/javax.servlet.jar
+lib/javax.servlet.jsp.jar
+lib/javax.servlet.jsp.jstl.jar
+lib/javax.transaction.jar
+
+
+
+
+
+
+
+
+
