@@ -1,9 +1,26 @@
 package core;
 
-public class User {
+import lombok.*;
+import javax.persistence.*;
+import java.io.Serializable;
 
+@NoArgsConstructor
+@EqualsAndHashCode
+@Entity
+public class User implements Serializable{
+
+    @Id
+    @Getter
+    @Setter
     private String email;
+
+    @Getter
+    @Setter
+    @Column(nullable=false)
     private String username;
+
+    @Getter
+    @Setter
     private String picture;
 
     //TODO: don't know how to handle images. store on database? in that case this link may be useful, idk:
@@ -19,7 +36,7 @@ public class User {
     public User() {
         this.email = "test@email.com";
         this.username = "Test Name";
-        this.picture = "Beautiful picture";
+        this.picture = "Test picture";
     }
 
     @Override
