@@ -37,7 +37,4 @@ public class Cookbook implements Serializable {
         this.name = name;
         this.recipes =recipes;
     }
-    
-
-
 }
