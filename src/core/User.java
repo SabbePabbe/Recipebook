@@ -33,11 +33,11 @@ public class User implements Serializable{
 
     }
 
-    public User() {
-        this.email = "test@email.com";
-        this.username = "Test Name";
-        this.picture = "Test picture";
-    }
+//    public User() {
+//        this.email = "test@email.com";
+//        this.username = "Test Name";
+//        this.picture = "Test picture";
+//    }
 
     @Override
     public String toString() {
