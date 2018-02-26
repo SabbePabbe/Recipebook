@@ -23,18 +23,32 @@ public class Cookbook implements Serializable {
     @Getter
     @Setter
     @Column(nullable=false)
-    private String name;
+    private String cookbookName;
 
-    @Getter
-    @Setter
-    //TODO: add new class to connect Recipes with Cookbooks? Shouldn't have list as db element.
-    private List<Recipe> recipes;
 
-    public Cookbook(String id, String userID, String name, List<Recipe> recipes)
+
+    public Cookbook(String id, String userID, String cookbookName)
     {
         this.id = id;
         this.userID =userID;
-        this.name = name;
-        this.recipes =recipes;
+        this.cookbookName = cookbookName;
+
     }
+
+
+    @Override
+    public String toString(){
+        return "Cookbook{" + "id = " + id +
+                ", userID = " + userID +
+                ", Cookbook Name = " + cookbookName + "}";
+    }
+
+
+
+
+
+
+    // old code
+
+
 }
